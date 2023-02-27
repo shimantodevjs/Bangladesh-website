@@ -14,7 +14,7 @@ body{
     
 }
 
-
+/* home page starts */
 .nav-bar ul{
     display: flex;
     justify-content: space-around;
@@ -39,7 +39,7 @@ body{
 .home-page{
     height: 100vh;
     width: 100%;
-    background-image: url(home.jpg);
+    background-image: url(img/home.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -67,12 +67,23 @@ body{
     letter-spacing: 10px;
   }
 
-  .description{
+  /* home page ends */
+  /* description */
+  .description,.facts{
     background-color: #ffffff;
-    padding: 60px;
+    padding: 50px;
     z-index: 2;
+    text-align: center;
   }
-
+  .facts ul{
+    text-align: left;
+    transform: translateX(450px);
+    margin-top: 20px;
+  }
+  .facts h1{
+    letter-spacing: 5px;
+    font-weight: 200;
+  }
   .description h1{
     text-align: center;
     margin-bottom: 20px;
@@ -80,9 +91,9 @@ body{
     font-weight: 200;
     z-index: 2;
   }
-
+/* history page */
   .history-page{
-    background-image: url(history.jpg);
+    background-image: url(img/history.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -96,7 +107,6 @@ body{
     width: 300px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.3);
-    cursor: pointer;
     background-color: #000;
     transition: all 0.5s ease-in-out;
   }
@@ -106,9 +116,10 @@ body{
     width: 300px;
     position: relative;
     margin: 100px 10px 20px;
+    cursor: pointer;
     
   }
-
+/* overlay class for the text over */
   .overlay{
     position: absolute;
     top: 0;
@@ -141,3 +152,19 @@ body{
     transform: scale(1.05);
   }
 
+  /* history page ends */
+ /* foods page starts */
+
+ .foods-page a img{
+  height: 200px;
+  
+ }
+
+ .foods-page{
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(4,1fr);
+  overflow: hidden;
+ } 
