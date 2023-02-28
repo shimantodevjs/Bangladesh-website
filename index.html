@@ -11,14 +11,14 @@
 </head>
 <body>
     <!-- home page -->
-    <section class="home-page" id="home-page">
+    <section class="home-page" id="home-page" id="sections">
         <!-- navigation bar -->
         <div class="nav-bar">
             <ul>
-                <li id="home"><a href="">Home</a> </li>
-                <li id="history"><a href="">History</a></li>
-                <li id="foods"><a href="">Foods</a></li>
-                <li id="places"><a href="">Places</a></li>    
+                <li id="home" ><a onclick="scrollToSection('home-page')" >Home</a> </li>
+                <li id="history"><a onclick="scrollToSection('history-page')">History</a></li>
+                <li id="foods"><a onclick="scrollToSection('foods-page')">Foods</a></li>
+                <li id="places"><a onclick="scrollToSection('places-page')">Places</a></li>    
             </ul>
         </div>
         <!-- showcase of home page -->
@@ -35,7 +35,7 @@
     </p>
     </div>
     <!-- history page -->
-    <section class="history-page" id="history-page">
+    <section class="history-page" id="history-page" id="sections">
         <!-- first image -->
         <div class="part" id="part-1"><img src="img/part1.png" alt=""><div class="overlay">
             <h2>1947</h2>
@@ -72,7 +72,7 @@
         </ul>
     </div>
     <!-- foods-page -->
-    <section class="foods-page" id="foods-page">
+    <section class="foods-page" id="foods-page" id="sections">
 
         <div class="main">
         <a class="food1 food" title="click here to know how to cook" href="https://www.youtube.com/watch?v=Hdlvz3FLKnc" target="_blank"><img src="img/beef.jpg" alt=""><p>Beef Kala Bhuna <br> (Beef Curry)</p></a>
@@ -101,7 +101,7 @@
         <a href="https://www.youtube.com/watch?v=rDYdeq3JW_E" target="_blank"><i class="fa-brands fa-youtube"></i></a>
     </div>
     <!-- places-page -->
-    <div class="places-page" id="places-page" >
+    <div class="places-page" id="places-page" id="sections">
         <img src="img/gallery1.jpg" alt="" class="gallery gallery1">
         <img src="img/gallery2.jpg" alt="" class="gallery gallery2">
         <img src="img/gallery3.jpg" alt="" class="gallery gallery3">
@@ -118,9 +118,14 @@
             <button id="gallery-btn">View Gallery</button>
         </div>
         <div class="back-container" id="back-container">
-        <button class="back" id="back"><i class="fa-solid fa-circle-xmark"></i></button>
+        <div class="back" id="back"><i class="fa-solid fa-circle-xmark"></i></div>
     </div>
     </div>
+    <!-- places page ends -->
+    <footer>
+        <p>Thank you for your time</p>
+        <button id="to-top">Go Back to Top</button>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
