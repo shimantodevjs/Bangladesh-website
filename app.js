@@ -104,3 +104,18 @@ backBtn.addEventListener("click",removeGrid)
 //go back to top
 toTop.addEventListener("click",goToTop)
 
+
+//hamburger menu
+const navIcons = document.querySelectorAll(".ham-menu")
+const navBar= document.querySelector(".nav-bar ul")
+const hamMenu= document.querySelector(".ham-menu")
+
+navIcons.forEach(function(navIcon) {
+     navIcon.addEventListener('click', function() {
+       navIcon.classList.toggle('open');
+     });
+   });
+
+hamMenu.addEventListener('click',function(){
+     navBar.classList.toggle('open-bar')
+})

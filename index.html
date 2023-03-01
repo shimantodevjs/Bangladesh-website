@@ -12,6 +12,12 @@
 <body>
     <!-- home page -->
     <section class="home-page" id="home-page" id="sections">
+        <div class="ham-menu">        
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>             
+        </div>
         <!-- navigation bar -->
         <div class="nav-bar">
             <ul>
@@ -73,16 +79,17 @@
     </div>
     <!-- foods-page -->
     <section class="foods-page" id="foods-page" id="sections">
-
-        <div class="main">
+     
+        <div class="food-container1">
         <a class="food1 food" title="click here to know how to cook" href="https://www.youtube.com/watch?v=Hdlvz3FLKnc" target="_blank"><img src="img/beef.jpg" alt=""><p>Beef Kala Bhuna <br> (Beef Curry)</p></a>
 
 
         <a class="food2 food" title="click here to know how to cook" href="https://www.youtube.com/watch?v=f1NG7BRW5j8" target="_blank"><img src="img/kachchi.jpg" alt=""><p>Kacchi Biriyani <br>(Mutton Biriyani)</p></a>
 
         <a class="food3 food" title="click here to know how to cook" href="https://www.youtube.com/watch?v=1tlC9wqAoWM" target="_blank"><img src="img/fishcurry.jpg" alt=""><p>Shorshe Ilish <br>(Hilsa Fish Mustard Curry)</p></a>
-    </div>
-    <div class="secondary">
+       </div>
+
+       <div class="food-container2">
         <a class="food4 food" title="click here to know how to cook" href="https://www.youtube.com/watch?v=xCf3QXVmI5Q" target="_blank"><img src="img/seekh.jpg" alt=""><p>Sheek Kebab <br>(beef Kebab)</p></a>
 
         <a class="food5 food" title="click here to know how to cook" href="https://www.youtube.com/watch?v=aDxoKGsb6rI"
@@ -115,10 +122,10 @@
         <img src="img/gallery11.jpg" alt="" class="gallery gallery11">
         <div class="gallery-tab" id="gallery-tab">
             <h1>Gallery</h1>
-            <button id="gallery-btn">View Gallery</button>
+            <button id="gallery-btn" onclick="scrollToSection('places-page')">View Gallery</button>
         </div>
         <div class="back-container" id="back-container">
-        <div class="back" id="back"><i class="fa-solid fa-circle-xmark"></i></div>
+        <div class="back" id="back" onclick="scrollToSection('places-page')" ><i class="fa-solid fa-circle-xmark"></i></div>
     </div>
     </div>
     <!-- places page ends -->
