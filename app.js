@@ -84,10 +84,12 @@ function removeGrid(){
      
 }
 
+//go to top
 function goToTop(){
       window.scrollTo(0,0)
 }
 
+//scrolling when clicked in nav bar
 function scrollToSection(sections) {
      const section = document.getElementById(sections);
      section.scrollIntoView({ behavior: "smooth" });
